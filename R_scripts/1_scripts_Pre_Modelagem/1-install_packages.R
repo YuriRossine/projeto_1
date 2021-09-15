@@ -1,10 +1,10 @@
 ###################################
-# Script de instalação dos pacotes 
+# Script de instala??o dos pacotes 
 # R version 4.1.1
 ##################################
 
-## Usamos o seguinte comando para a instalação dos pacotes que estão no CRAN do R (faça isso caso estes pacotes NÃƒO ESTEJAM INSTALADOS). 
-## Obs.: A instalação não só precisa ser feita uma vez. 
+## Usamos o seguinte comando para a instala??o dos pacotes que est?o no CRAN do R (fa?a isso caso estes pacotes NÃƒO ESTEJAM INSTALADOS). 
+## Obs.: A instala??o n?o s? precisa ser feita uma vez. 
 
 install.packages("raster")
 install.packages("sp")
@@ -14,22 +14,23 @@ install.packages("rgdal")
 install.packages("maptools")
 remotes::install_github("marlonecobos/kuenm")
 
-## Carregando pacotes necessários para instalaçã. 
-#  Cada vez que q uma sessão de R é iniciada, é preciso carregar os pacotes que serão usados, como abaixo:
+## Carregando pacotes necess?rios para instala??. 
+#  Cada vez que q uma sess?o de R ? iniciada, ? preciso carregar os pacotes que ser?o usados, como abaixo:
 
 library(remotes)
 library(devtools)
 
-## Instalação modleR
+## Instala??o modleR
 
-#o modleR ainda não está no CRAN do R, nesse caso a instalação é  diferente
+#o modleR ainda n?o est? no CRAN do R, nesse caso a instala??o ?  diferente
 
-# Instalação com vinhetas (exemplos do pacote). Recomendada para quem tem uma melhor memória RAM*
+# Instala??o com vinhetas (exemplos do pacote). Recomendada para quem tem uma melhor mem?ria RAM*
 remotes::install_github("Model-R/modleR",
                         build = TRUE,
                         dependencies = TRUE,
                         build_opts = c("--no-resave-data", "--no-manual"),
                         build_vignettes = TRUE)
 
-# Instalação sem vinheta (sem os exemplos)
+# Instala??o sem vinheta (sem os exemplos)
 remotes::install_github("Model-R/modleR", build = TRUE)
+#
